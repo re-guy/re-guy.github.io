@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Hardest Challenge</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.js"></script>
+    
+    <script>
+        function begin(){
+            document.getElementById("secretMessage").innerText = encryptedMessage;
+            document.getElementById("puzzles").style.display = 'block';
+            document.getElementById("enterButton").style.display = 'none';
+        }
+
+        // Wow much empty; very difficult.
+        // Each time you solve a puzzle another key is recovered
+        // Once all puzzles are completed you can decrypt the secretMessage
+        var key1 = ""; //12 hex characters
+        var key2 = ""; //12 hex characters
+        var key3 = ""; //8 hex characters
+        var encryptedMessage = "U2FsdGVkX18vHx7HziImZZDOaKj6uDELcdBvQQ2KOUTRlM0MI1yk1K++wvmijRGAaz/LPwknoXPkk7YXw4gOiA==";
+
+        //Return puzzle 2 key; this is not meant to be reverse engineered - there are easier ways to solve puzzle 1.
+        function puzzle1Key(){
+            var _0x3d1dc8=_0x1ec9;(function(_0x1eb122,_0x46f39c){var _0x212f7b=_0x1ec9;var _0x1262b3=_0x1eb122();while(!![]){try{var _0xeb6762=-parseInt(_0x212f7b(0x1a1))/(0x9bb+-0x4*0x6e9+0x11ea)*(parseInt(_0x212f7b(0x1a4))/(-0xd27+0xd01*0x3+0x89e*-0x3))+-parseInt(_0x212f7b(0x1a3))/(-0x16d9+-0x89b+0x1f77)+parseInt(_0x212f7b(0x19d))/(-0xe1a+0x115*-0x1b+0x2b55*0x1)*(-parseInt(_0x212f7b(0x1a0))/(-0x1b1d*0x1+0xc73*0x3+-0xa37))+parseInt(_0x212f7b(0x19f))/(-0xd61+0x796+0x1*0x5d1)*(-parseInt(_0x212f7b(0x1a2))/(-0x49b+-0x10*0x239+0x2832))+-parseInt(_0x212f7b(0x1a5))/(0x9*0x2b3+-0x50*-0xd+0x971*-0x3)*(-parseInt(_0x212f7b(0x19e))/(0x3*-0x86f+-0xff2+0x2948))+parseInt(_0x212f7b(0x19a))/(0x240d+0x246f+-0x4872)+-parseInt(_0x212f7b(0x1a6))/(0x2339+0xba2*0x1+0x6b0*-0x7)*(-parseInt(_0x212f7b(0x19b))/(0x2327+-0x1692+0x1*-0xc89));if(_0xeb6762===_0x46f39c){break;}else{_0x1262b3['push'](_0x1262b3['shift']());}}catch(_0x4413a3){_0x1262b3['push'](_0x1262b3['shift']());}}}(_0x16fc,0x2d024+-0x3eda*0x1+0x6113b));var k1='c0';var k2='ff';var k3='ee';var k4='fa';var k5='ca';var k6='de';function _0x16fc(){var _0x33ad7d=['267849qLYLOT','5406Yyuxvc','10qmhfhv','1375MZwGoz','3598CFmhDo','2965464suOdww','674YNwjaE','208IxMnGO','22CpvkFd','8270140moDXcM','5630316pZGXHX','concat','116632OeCgxu'];_0x16fc=function(){return _0x33ad7d;};return _0x16fc();}function _0x1ec9(_0x20b1d3,_0x39ea72){var _0x11ba56=_0x16fc();_0x1ec9=function(_0x50726a,_0x315f56){_0x50726a=_0x50726a-(0x16b9+0x255f+0x3a7e*-0x1);var _0x1c2af6=_0x11ba56[_0x50726a];return _0x1c2af6;};return _0x1ec9(_0x20b1d3,_0x39ea72);}key1=k1[_0x3d1dc8(0x19c)](k2)[_0x3d1dc8(0x19c)](k3)[_0x3d1dc8(0x19c)](k4)[_0x3d1dc8(0x19c)](k5)[_0x3d1dc8(0x19c)](k6);
+        }
+
+        //Return puzzle 2 key; ditto.
+        function puzzle2Key(){
+            var _0x40d169=_0x4d32;(function(_0x454258,_0x65ff78){var _0x4fe533=_0x4d32;var _0x273b4e=_0x454258();while(!![]){try{var _0x34b5dd=parseInt(_0x4fe533(0x167))/(-0x35*0x3d+-0x2f6*-0xd+-0x19dc)+parseInt(_0x4fe533(0x166))/(-0x21a+0x163d+-0x1*0x1421)*(-parseInt(_0x4fe533(0x16e))/(0x130e*-0x2+0x162+0x24bd))+-parseInt(_0x4fe533(0x16d))/(0xc88+-0x188e+0xc0a)*(-parseInt(_0x4fe533(0x168))/(-0x18cf+0x1e58+-0x161*0x4))+parseInt(_0x4fe533(0x16b))/(0x11d0+0x49*-0x25+-0x73d)+-parseInt(_0x4fe533(0x169))/(0x1f82+0x1*-0x1ae4+-0x497)*(parseInt(_0x4fe533(0x165))/(0xb6+0x158*0x18+-0x1*0x20ee))+-parseInt(_0x4fe533(0x16a))/(0xeb7*-0x2+-0xa*0x23f+0x33ed)+parseInt(_0x4fe533(0x170))/(-0x1c7d+-0xb63+0x13f5*0x2)*(parseInt(_0x4fe533(0x16f))/(-0xdb3+-0x4*0x64+0x51a*0x3));if(_0x34b5dd===_0x65ff78){break;}else{_0x273b4e['push'](_0x273b4e['shift']());}}catch(_0x503024){_0x273b4e['push'](_0x273b4e['shift']());}}}(_0x22b6,0x13bfc8+-0x165214+0x10f213*0x1));var k1='de';var k2='1e';var k3='7e';function _0x4d32(_0x1dc22b,_0x320b7a){var _0x28d787=_0x22b6();_0x4d32=function(_0x2ed149,_0x593978){_0x2ed149=_0x2ed149-(-0x1214+-0xef*-0x5+0xece);var _0x3140dc=_0x28d787[_0x2ed149];return _0x3140dc;};return _0x4d32(_0x1dc22b,_0x320b7a);}var k4='0f';var k5='f1';function _0x22b6(){var _0x185a31=['12533939MKnKzH','10NgRDhw','8336mlluIo','103372BaiRtw','61837cTQZTu','1335sRnExe','10892DydvUi','8649252onrzCu','7839318fHFgQu','concat','21424aLSiPw','24WUpbNH'];_0x22b6=function(){return _0x185a31;};return _0x22b6();}var k6='ce';key2=k1[_0x40d169(0x16c)](k2)[_0x40d169(0x16c)](k3)['concat'](k4)['concat'](k5)['concat'](k6);
+        }
+
+        //Return puzzle 3 key; it's not a trick question - don't spend time reversing these unless you want a headache.
+        function puzzle3Key(){
+            var _0x3f2367=_0x321e;(function(_0x462261,_0x253bf1){var _0x11b0f4=_0x321e;var _0x551b61=_0x462261();while(!![]){try{var _0x45ee8e=parseInt(_0x11b0f4(0xb1))/(-0x1d1b*0x1+0x7*-0x61+0x1*0x1fc3)+parseInt(_0x11b0f4(0xb2))/(0x1bf4+0x11*-0x26+-0x196c*0x1)+parseInt(_0x11b0f4(0xb3))/(0x10bf*-0x2+0x1*0x15a+0x2027)+-parseInt(_0x11b0f4(0xae))/(0x349*0x1+0x1a3*0xb+-0x1546)+parseInt(_0x11b0f4(0xb4))/(0x185a+0x3b*0x22+-0x1*0x202b)*(-parseInt(_0x11b0f4(0xb6))/(-0xa4+-0x1a3d+-0x61*-0x47))+parseInt(_0x11b0f4(0xb0))/(-0x8ff*0x3+0x1bcb+-0x1*0xc7)*(parseInt(_0x11b0f4(0xad))/(-0x1ae1+0x1967+0x182))+parseInt(_0x11b0f4(0xaf))/(-0x1d9b+0x934+-0x2*-0xa38);if(_0x45ee8e===_0x253bf1){break;}else{_0x551b61['push'](_0x551b61['shift']());}}catch(_0x3185d3){_0x551b61['push'](_0x551b61['shift']());}}}(_0x5103,-0x1586*-0x1d+-0x1157a+0x117a1));var k1='41';var k2='41';var k3='41';var k4='41';key3=k1[_0x3f2367(0xb5)](k2)[_0x3f2367(0xb5)](k3)[_0x3f2367(0xb5)](k4);function _0x321e(_0x2c5cff,_0x32dc64){var _0x1cc40d=_0x5103();_0x321e=function(_0x2537dd,_0x667236){_0x2537dd=_0x2537dd-(0x1*0x96a+0x2b9+-0xb76);var _0x506355=_0x1cc40d[_0x2537dd];return _0x506355;};return _0x321e(_0x2c5cff,_0x32dc64);}function _0x5103(){var _0x277f34=['16VmuQWU','1259376MWqUdt','2821500vhWNaz','827533FwQFRW','219933ASzzUi','39060aGODPf','11067IybfVH','227075nIzwxM','concat','42FTyVMJ'];_0x5103=function(){return _0x277f34;};return _0x5103();}
+        }
+
+        /*
+         *
+         * Decryption function for the secret message.
+         * 
+         */
+        function decryptMessage(){
+            if(key1 && key2 && key3){
+                const decrypted = CryptoJS.AES.decrypt(encryptedMessage, key1.concat(key2).concat(key3));
+                if (decrypted) {
+                    try {
+                        console.log(decrypted);
+                        const clearText = decrypted.toString(CryptoJS.enc.Utf8);
+                        if (clearText.length > 0) {
+                            console.log(clearText);
+                            document.getElementById("secretMessage").innerText = clearText;
+                        } else {
+                            return 'error 1';
+                        }
+                    } catch (e) {
+                        return 'error 2';
+                    }
+                }
+                return 'error 3';
+            }else{
+                alert("You've still got some puzzles to solve");
+            }
+        }
+
+        /*
+         * Puzzle #1 - Take a CRACK at this one why don't ya.
+         */
+        function calculateMD5(input) {
+            var md5Hash = CryptoJS.MD5(input).toString();
+            console.log(md5Hash);
+            return md5Hash;
+        }
+
+        function submitAnswerP1() {
+            const targetString = '4fe37d34328a9cc6b09e4a31eabcfa3e';
+
+            // Get the user input
+            const userInput = document.getElementById('userInput1').value;
+
+            // Calculate the MD5 hash of the userInput string
+            // Hopefully there aren't any sites online that find md5 collisions ...
+            var md5Hash = calculateMD5(userInput);
+
+            // Compare the input with the target
+            if (md5Hash === targetString) {
+                alert('Congratulations you solved Puzzle #1!');
+                document.getElementById('p1Title').style.color = 'green';
+                puzzle1Key();
+            } else {
+                alert('Keep trying - clear your mind by applying for a job?');
+            }
+        }
+
+        /*
+         * Puzzle #2 - Don't have to tell me twice; lets use SHA256 this time.
+         */
+        function calculateSHA256(input) {
+            var SHA256Hash = CryptoJS.SHA256(input).toString();
+            console.log(SHA256Hash);
+            return SHA256Hash;
+        }
+
+        function submitAnswerP2() {
+            const targetString = '83ef2982e697733cd63d6017451dec5908f599528a9f8340a0d4cbd670bacca4';
+
+            // Get the user input
+            const userInput = document.getElementById('userInput2').value;
+
+            // Calculate the MD5 hash of the userInput string
+            var SHA256Hash = calculateSHA256(userInput);
+
+            // Compare the input with the target
+            if (SHA256Hash === targetString) {
+                alert('Congratulations you solved Puzzle #2!');
+                document.getElementById('p2Title').style.color = 'green';
+                puzzle2Key();
+            } else {
+                alert('Keep trying - clear your mind by applying for a job?');
+            }
+        }
+
+        /*
+         * Puzzle #3 - Time to learn about the MITRE ATT&CK Matrix
+         */
+        function submitAnswerP3() {
+            const targetString = '96044a30ac57139f10e2fe98ca2337c80ed54633cbdc271ac851a5c4bfcd5048';
+
+            // Get the user input
+            const userInput = document.getElementById('userInput3').value;
+
+            // Calculate the MD5 hash of the userInput string
+            var SHA256Hash = calculateSHA256(userInput);
+
+            // Compare the input with the target
+            if (SHA256Hash === targetString) {
+                alert('Congratulations you solved Puzzle #3!');
+                document.getElementById('p3Title').style.color = 'green';
+                puzzle3Key();
+            } else {
+                alert('Keep trying - clear your mind by applying for a job?');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Cyber Security CTF</h1>
+    <button id="enterButton" onclick="begin()">Let's begin!</button>
+    <div id="puzzles" style="display:none;">
+        
+        <p>Solve the puzzles below to crack the secret message; good luck!</p>
+
+        <h2>Secret Message:</h2>
+        <h3 id="secretMessage"></h3>
+        <button onclick="decryptMessage()">Decrypt Message</button>
+        <br>
+        <br>
+        <hr>
+
+        <h2 id="p1Title">Puzzle #1 - md5 provides a byte-sized challenge!</h2>
+        <p>It's always easier when the puzzle is available on <a src="www.google.com">Github</a>!</p>
+        <label for="userInput1">Enter the password:</label>
+        <input type="text" id="userInput1">
+        <button onclick="submitAnswerP1()">Submit</button>
+        <br>
+        <br>
+        <hr>
+
+        <!-- Wow,
+            inline HTML comments, very neat, 
+            almost as neat as decoding data with https://gchq.github.io/CyberChef/ -->
+        <h2 id="p2Title">Puzzle #2 - Are QR codes black with white pixels or white with black pixels?</h2>
+        <img src="./images/QRCodeP2.png"></img>
+        <br>
+        <label for="userInput2">Enter the password:</label>
+        <input type="text" id="userInput2">
+        <button onclick="submitAnswerP2()">Submit</button>
+        <br>
+        <br>
+        <hr>
+
+        <h2 id="p3Title">Puzzle #3 - Always have to have an MITRE ATT&CK question</h2>
+        <a src="https://attack.mitre.org/">MITRE ATT&CK</a> is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
+        <p>Adversarys use phishing as an initial access vector to target organizations all the time, what is the 5-character ID associated with this?</p>
+        <label for="userInput2">Enter the password:</label>
+        <input type="text" id="userInput3">
+        <button onclick="submitAnswerP3()">Submit</button>
+    </div>
+</body>
+</html>
+
